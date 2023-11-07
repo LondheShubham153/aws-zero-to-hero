@@ -40,10 +40,3 @@ This repository contains AWS Zero To Hero Course Materials
 <a href="https://www.trainwithshubham.com/">
   <img width="30px" src="https://media.licdn.com/dms/image/C4D0BAQGokBZsFEUWHw/company-logo_200_200/0/1677354328695?e=1700092800&v=beta&t=3bw7W2tQEpn023Slj_PacUZflE-OyYpBU-9juiJNJVY" />
 </a>&ensp;
-
-## Events
-
-### YouTube Live Announcement:
-<a href="https://youtu.be/rO5Rllir-LM">
-  <img width="30px" src="https://i.pinimg.com/originals/46/02/cb/4602cbc18967da9c1eba7452905cd99b.png" />
-  </a>&ensp;
