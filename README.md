@@ -15,6 +15,10 @@ This repository contains AWS Zero To Hero Course Materials
 - <a href="https://github.com/LondheShubham153/aws-zero-to-hero/blob/main/Day6/Tasks.md">Day6 task</a>
 - <a href="https://github.com/LondheShubham153/aws-zero-to-hero/blob/main/Day7/Tasks.md">Day7 task</a>
 
+## Hashtags to Complete the Challenge
+- #AWSwithTWS
+- #7DaysOfAWS
+
 ## These are our community Links
   <a href="https://discord.com/channels/824622549182185493/824622550327623692">
     <img width="30px" src="https://www.vectorlogo.zone/logos/discordapp/discordapp-tile.svg" />
