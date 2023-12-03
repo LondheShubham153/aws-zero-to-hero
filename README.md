@@ -7,13 +7,13 @@ This repository contains AWS Zero To Hero Course Materials
 - Try to perform tasks added for the particular day
 
 ## Table of Content
-- <a href="https://github.com/LondheShubham153/aws-zero-to-hero/blob/main/Day1/Tasks.md">Day1 task</a>
-- <a href="https://github.com/LondheShubham153/aws-zero-to-hero/blob/main/Day2/Tasks.md">Day2 task</a>
-- <a href="https://github.com/LondheShubham153/aws-zero-to-hero/blob/main/Day3/Tasks.md">Day3 task</a>
-- <a href="https://github.com/LondheShubham153/aws-zero-to-hero/blob/main/Day4/Tasks.md">Day4 task</a>
-- <a href="https://github.com/LondheShubham153/aws-zero-to-hero/blob/main/Day5/Tasks.md">Day5 task</a>
-- <a href="https://github.com/LondheShubham153/aws-zero-to-hero/blob/main/Day6/Tasks.md">Day6 task</a>
-- <a href="https://github.com/LondheShubham153/aws-zero-to-hero/blob/main/Day7/Tasks.md">Day7 task</a>
+- <a href="https://github.com/LondheShubham153/aws-zero-to-hero/blob/main/Day1/README.md">Day1 task</a>
+- <a href="https://github.com/LondheShubham153/aws-zero-to-hero/blob/main/Day2/README.md">Day2 task</a>
+- <a href="https://github.com/LondheShubham153/aws-zero-to-hero/blob/main/Day3/README.md">Day3 task</a>
+- <a href="https://github.com/LondheShubham153/aws-zero-to-hero/blob/main/Day4/README.md">Day4 task</a>
+- <a href="https://github.com/LondheShubham153/aws-zero-to-hero/blob/main/Day5/README.md">Day5 task</a>
+- <a href="https://github.com/LondheShubham153/aws-zero-to-hero/blob/main/Day6/README.md">Day6 task</a>
+- <a href="https://github.com/LondheShubham153/aws-zero-to-hero/blob/main/Day7/README.md">Day7 task</a>
 
 ## Hashtags to Complete the Challenge
 - #AWSwithTWS
