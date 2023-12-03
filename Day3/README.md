@@ -26,13 +26,13 @@
 
 ## Tasks:
 #### 1) Make a private S3 bucket in AWS and change the policy so you can access its stuff without making it public.<br>
-`Note:` Task1 will help you to understand how we can secure our S3 buckets.
+> `Note:` Task1 will help you to understand how we can secure our S3 buckets.
 
 #### 2) Configure AWSCLI on your Ubuntu machine.
    
 #### 3) Create an EC2 instance using AWSCLI.<br>
-`Note:` Task3 will help you to understand AWSCLI more clearly.<br>
-`Hint:`Resource to complete task2: <a href="https://madhup.hashnode.dev/creating-an-ec2-instance-on-aws-using-awscli"> EC2 using AWSCLI</a>
+> `Note:` Task3 will help you to understand AWSCLI more clearly.<br>
+> `Hint:`Resource to complete task2: <a href="https://madhup.hashnode.dev/creating-an-ec2-instance-on-aws-using-awscli"> EC2 using AWSCLI</a>
 
 #### 4) Setting Up AWS IAM for a New Team Member<br>
 `Scenario:` Imagine you're working as an IT administrator at GlobalTech Inc., a multinational company with diverse cloud computing needs. The company heavily relies on AWS services for its operations. You have a new colleague, Alex, who recently joined your team. Alex's role involves monitoring the company's computing resources and managing data storage. Your task is to set up Alex's AWS access.<br>
@@ -42,7 +42,7 @@
     - View EC2 Instances: Alex needs to monitor the virtual servers running in the AWS cloud but should not be able to modify them.
     - Create S3 Buckets: Alex is responsible for creating new storage spaces for various projects.
 
-`Note:` Make a blog and post it on linkedIn.
+> `Note:` Make a blog and post it on linkedIn.
 
 ### Finding it difficult?
 - Do let me know on LinkedIn.
