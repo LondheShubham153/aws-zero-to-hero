@@ -1,6 +1,8 @@
 # AWS-Zero-to-Hero <img src="https://github.com/LondheShubham153/aws-zero-to-hero/blob/main/Assets/Amazon_Web_Services-Logo.png" alt="Amazon logo" height=35 width=55/>
 This repository contains AWS Zero To Hero Course Materials 
 
+# https://prajwals.notion.site/prajwals/AWS-Certified-Cloud-Practitioner-Syllabus-3a907c67a7b044419b36e6e19a9c6195
+
 ## How to get started?
 - Fork this repository
 - Read the topics day-wise
