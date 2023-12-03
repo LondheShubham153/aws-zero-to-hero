@@ -1,7 +1,5 @@
 # AWS-Zero-to-Hero <img src="https://github.com/LondheShubham153/aws-zero-to-hero/blob/main/Assets/Amazon_Web_Services-Logo.png" alt="Amazon logo" height=35 width=55/>
-This repository contains AWS Zero To Hero Course Materials 
-
-# https://prajwals.notion.site/prajwals/AWS-Certified-Cloud-Practitioner-Syllabus-3a907c67a7b044419b36e6e19a9c6195
+This repository contains AWS Zero To Hero Course Materials  
 
 ## How to get started?
 - Fork this repository
@@ -20,6 +18,9 @@ This repository contains AWS Zero To Hero Course Materials
 ## Hashtags to Complete the Challenge
 - #AWSwithTWS
 - #7DaysOfAWS
+
+## Simple Guide for AWS CCP
+Check [Here](https://prajwals.notion.site/prajwals/AWS-Certified-Cloud-Practitioner-Syllabus-3a907c67a7b044419b36e6e19a9c6195)
 
 ## These are our community Links
   <a href="https://discord.com/channels/824622549182185493/824622550327623692">
