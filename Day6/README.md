@@ -16,7 +16,7 @@
     - Create an EC2 instance with apache webserver
     - Create a CloudFront distribution and attach to EC2 instance to access the nginx webpage.
 
-#### 3) Learn about Route53 and DNS. 
+#### 3) Learn about AWS fully managed DNS Service (Route53). 
 
 
 ## Reference:
