@@ -41,7 +41,7 @@ GitHub → CodePipeline → CodeBuild → CodeDeploy → EC2
 
 ## 📋 Tasks to Perform
 
-### 🪜 Step 1: Prepare Source Code
+### 🪜 Task 1: Prepare Source Code
 
 - Use a simple Node.js application (you can fork any sample from GitHub or create your own).
 - Add a `buildspec.yml` file at the root for CodeBuild instructions.
