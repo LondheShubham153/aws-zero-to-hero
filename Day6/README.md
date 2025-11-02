@@ -1,47 +1,114 @@
-# Task for Day6
+# 🐳 Day 6 – AWS ECS, ECR, Route 53 & CloudFront
 
-### What is Elastic Container Service?
-  - Amazon Elastic Container Services (Amazon ECS) is a fully managed container orchestration service that helps organizations easily deploy, manage, and scale containerized applications.
-  - <a href="https://aws.amazon.com/ecs/features/"> Learn more about ECS </a>
+Welcome to **Day 6** of the **7 Days of AWS Challenge** 🚀  
+Today, you’ll explore **containerization and networking** in AWS — learning how to deploy scalable applications using **ECS, ECR, Route 53**, and **CloudFront**.
 
-### What is Elastic Container Registry?
-  - Amazon Elastic Container Registry (ECR) is a fully managed Docker container registry service provided by Amazon Web Services (AWS). In simple terms, it's a place where you can store, manage, and deploy Docker container images, making it easier for you to run applications in the cloud using containers.
-  - <a href="https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html"> Learn more about ECR </a>
+---
 
-### What is Route53?
-  - Amazon Route 53 is a scalable and highly available Domain Name System (DNS) web service provided by Amazon Web Services (AWS). It is named after the TCP/IP port 53, which is used for DNS services. Route 53 is designed to provide reliable and cost-effective domain registration, DNS routing, and health checking of resources within your AWS infrastructure.
-  - How Does DNS Route Traffic To Your Web Application? see the below diagram:
-![image](https://github.com/LondheShubham153/aws-zero-to-hero/assets/121779953/aac36a26-e48e-4444-bff5-27a15568040a)
+## 🧠 Concepts to Learn
 
-<details>
-  <summary>Explaination of Above Diagram</summary><br>
-  1) A user opens a web browser, enters www.example.com in the address bar, and presses Enter.<br><br>
-  2) The request for www.example.com is routed to a DNS resolver, which is typically managed by the user's Internet service provider (ISP), such as a cable Internet provider, a DSL broadband provider, or a corporate network.<br><br>
-  3) The DNS resolver for the ISP forwards the request for www.example.com to a DNS root name server.<br><br>
-  4) The DNS resolver for the ISP forwards the request for www.example.com again, this time to one of the TLD name servers for .com domains. The name server for .com domains responds to the request with the names of the four Amazon Route 53 name servers that are associated with the example.com domain.<br><br>
-  5) The DNS resolver for the ISP chooses an Amazon Route 53 name server and forwards the request for www.example.com to that name server.<br><br>
-  6) The Amazon Route 53 name server looks in the example.com hosted zone for the www.example.com record, gets the associated value, such as the IP address for a web server, 192.0.2.44, and returns the IP address to the DNS resolver.<br><br>
-  7) The DNS resolver for the ISP finally has the IP address that the user needs. The resolver returns that value to the web browser. The DNS resolver also caches (stores) the IP address for example.com for an amount of time that you specify so that it can respond more quickly the next time someone browses to example.com. For more information, see time to live (TTL).<br><br>
-  8) The web browser sends a request for www.example.com to the IP address that it got from the DNS resolver. This is where your content is, for example, a web server running on an Amazon EC2 instance or an Amazon S3 bucket that's configured as a website endpoint.<br><br>
-  9) The web server or other resource at 192.0.2.44 returns the web page for www.example.com to the web browser, and the web browser displays the page.<br>
-</details>
-   
+### 🧩 Amazon ECS (Elastic Container Service)
+Amazon **Elastic Container Service (ECS)** is a **fully managed container orchestration** service that helps you deploy, manage, and scale Docker containers with ease.  
+It supports both EC2 and Fargate launch types, letting you choose between managing servers yourself or letting AWS handle the infrastructure.
 
-## Tasks:
-#### 1) Deploy two-tier application on Elastic Container Service (ECS) and configure Elastic Container Registry (ECR) to push docker images.
-> `Note:` The Docker image must be fetched from ECR.
+📘 [Learn More About ECS](https://aws.amazon.com/ecs/features/)
 
-#### 2) Understand the concept of CloudFront and try to perform below sub-tasks:
-    - What is caching in cloudfront?
-    - Create an EC2 instance with apache webserver
-    - Create a CloudFront distribution and attach to EC2 instance to access the apache webpage.
+---
 
-#### 3) Learn about AWS fully managed DNS Service (Route53) and write a detailed blog and post it on linkedin. 
+### 📦 Amazon ECR (Elastic Container Registry)
+**Amazon ECR** is a **fully managed Docker container registry** that allows you to store, manage, and deploy container images securely.  
+You can easily push your local Docker images to ECR and use them in ECS for production-grade workloads.
 
-#### Finding it difficult?
-- let me know on linkein
+📘 [Learn More About ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html)
 
-- Happy Learning :)
+---
 
-## Reference:
- - <a href="https://www.linkedin.com/posts/madhup-pandey-0311821b3_awscloud-aws-cloud-activity-7133303181345718272-cToL?utm_source=share&utm_medium=member_desktop"> CloudFront </a> 
+### 🌍 Amazon Route 53
+**Amazon Route 53** is AWS’s scalable **Domain Name System (DNS)** web service that provides reliable domain registration, routing, and health checks.
+
+#### How DNS Works
+1. A user opens a browser and requests `www.example.com`.
+2. The request goes to a **DNS resolver** managed by their Internet Service Provider (ISP).
+3. The resolver queries the **root name servers**, then the **TLD servers** (like `.com`).
+4. The request reaches **Amazon Route 53**, which finds the correct IP address for `example.com`.
+5. The browser connects to your server (EC2, S3, or CloudFront) and loads the web page.
+
+📘 [Route 53 Documentation](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html)
+
+---
+
+### ⚡ Amazon CloudFront
+**CloudFront** is a **Content Delivery Network (CDN)** that speeds up distribution of your web content (images, videos, APIs, etc.) using edge locations around the world.
+
+**Caching** in CloudFront helps deliver frequently accessed content faster to users and reduces the load on your origin servers.
+
+📘 [CloudFront Overview – LinkedIn Example](https://www.linkedin.com/posts/madhup-pandey-0311821b3_awscloud-aws-cloud-activity-7133303181345718272-cToL)
+
+---
+
+## 🎯 Tasks for Day 6
+
+### 🪜 Task 1: Deploy a Two-Tier Application with ECS & ECR
+- Deploy the **Two-Tier Flask App** using **Amazon ECS**.  
+- Push your **Docker image** to **ECR**.  
+- Configure ECS to pull the image from ECR for deployment.
+
+> 💡 *Hint:* You can reuse the [Two-Tier Flask App Repository](https://github.com/LondheShubham153/two-tier-flask-app) from Day 4.
+
+---
+
+### 🪜 Task 2: Understand and Implement CloudFront
+1. Learn about **caching in CloudFront** and how it improves latency.  
+2. Create an **EC2 instance** with an **Apache webserver**.  
+3. Create a **CloudFront distribution** and connect it to your EC2 instance to serve the webpage globally.
+
+---
+
+### 🪜 Task 3: Learn Route 53 and Write a Blog
+- Explore how **Route 53** manages DNS and connects domain names to AWS resources.  
+- Write a **detailed LinkedIn blog** explaining Route 53 with a diagram or real-world example.  
+- Use hashtags **#7DaysOfAWS** and **#AWSwithTWS**, and tag [@TrainWithShubham](https://www.linkedin.com/in/shubhamlondhe1996/).
+
+---
+
+## 💬 Engagement Activity
+
+✅ Share your **Day 6 learnings** on LinkedIn using  
+> `#7DaysOfAWS`  `#AWSwithTWS`
+
+Mention:
+> “Day 6 of my #7DaysOfAWS Challenge with @TrainWithShubham 🐳  
+> Deployed containers with ECS & ECR, explored Route 53 and CloudFront — learning how AWS connects the world!”
+
+You can also:
+- Comment on 2–3 other learners’ posts.  
+- Share your ECS dashboard screenshot or CloudFront setup diagram.  
+- Ask questions in our [Discord Community](https://discord.gg/7GjDgDHR49).
+
+Keep learning, keep sharing 🌟
+
+---
+
+## 🧩 Finding It Difficult?
+
+Don’t worry — ask questions or get help via:  
+- 💬 [LinkedIn](https://www.linkedin.com/in/shubhamlondhe1996/)  
+- 💭 [Discord Community](https://discord.gg/7GjDgDHR49)  
+- 🌐 [Official Website](https://trainwithshubham.com)
+
+---
+
+## 📚 References
+- [AWS ECS Documentation](https://aws.amazon.com/ecs/features/)  
+- [AWS ECR Documentation](https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html)  
+- [AWS Route 53 Documentation](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html)  
+- [AWS CloudFront Overview](https://aws.amazon.com/cloudfront/)  
+
+---
+
+## 🌟 Bonus Tip
+> Containers make apps portable. DNS makes them reachable. CDNs make them fast.  
+> Today you learned how AWS combines all three to power the internet 🌍  
+
+Happy Learning ✨  
+**– TrainWithShubham**
